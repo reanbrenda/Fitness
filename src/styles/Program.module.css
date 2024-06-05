@@ -1,0 +1,52 @@
+.container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .description {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .workoutList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .workoutItem {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .workoutItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .workoutImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .workoutName {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .workoutDescription {
+    color: #6b7280;
+  }
+  

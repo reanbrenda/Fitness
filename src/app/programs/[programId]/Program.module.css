@@ -1,0 +1,35 @@
+.container {
+    padding: 20px;
+  }
+  
+  .workoutsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .workoutCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .workoutImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .link {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

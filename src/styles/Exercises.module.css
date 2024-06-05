@@ -1,0 +1,47 @@
+.container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .exercise {
+    text-align: center;
+  }
+  
+  .exerciseName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exerciseDescription {
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exerciseImage {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exerciseVideo {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exerciseSteps {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+  

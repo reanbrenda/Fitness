@@ -1,0 +1,8 @@
+query GetExercise($id: ID!) {
+	excercise(where: {id: $id}) {
+    id
+    name
+    description
+    video
+  }
+}
