@@ -1,43 +1,45 @@
 
 import { sdk } from '@/lib/client';
 import styles from './Programs.module.css'
+import WelcomeSection from './Welcome';
+import Navbar from './navbar';
 
-
+import Image from 'next/image';
 
 
 const Programs = async () => {
-  const { data: { programs } }= await sdk.GetPrograms();
-  
- 
+  const { data: { programs } } = await sdk.GetPrograms();
 
-  // const programImages = programs.map(program => program.image?.url);
- 
-console.log(programs?.[0]?.image?.url)
   return (
     <div className={styles.container}>
-      <h1>Fitness Programs</h1>
-      <div className={styles.programsList}>
-        {programs.map((program) => (
-          <div key={program.id} className={styles.programCard}>
-            <h2>{program.name}</h2>
-            <p>{program.description}</p>
-           
-            {program.image && (
-              
-              <img src={program.image.url} alt={program.name ?? 'Program Image'} className={styles.programImage} />
-            )}
-            <a href={`/programs/${program.id}`} className={styles.link}>View Workouts</a>
-          </div>
-        ))}
+      <div className={styles.mainContent}>
+        <WelcomeSection />
+        <div className={styles.programsList}>
+          {programs.map((program) => (
+            <div key={program.id} className={styles.programCard}>
+              <div className={styles.imageContainer}>
+                {program.image && (
+                  <Image 
+                    src={program.image.url} 
+                    alt={program.name ?? 'Program Image'} 
+                    layout="fill" 
+                    objectFit="cover" 
+                    objectPosition="center" 
+                    className={styles.programImage} 
+                  />
+                )}
+              </div>
+              <div className={styles.cardContent}>
+                <h2 className={styles.programName}>{program.name}</h2>
+                <p>{program.description}</p>
+                <a href={`/programs/${program.id}`} className={styles.button}>View Workouts</a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Programs;
-
-
-
-
-
-  

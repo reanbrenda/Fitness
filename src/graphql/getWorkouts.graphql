@@ -9,6 +9,7 @@ query GetWorkout($id: ID!) {
     excercises {
       id
       name
+      description
       video
     }
   }

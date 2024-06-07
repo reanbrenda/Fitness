@@ -1,0 +1,29 @@
+
+  
+  .welcomeSection {
+    background-image: url('../../public/bg.png');/* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .welcomeText h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .programsLine {
+    margin-top: 20px;
+    border-top: 2px solid #fff;
+    padding-top: 20px;
+  }
+  
+  .programsLine h2 {
+    font-size: 2em;
+    color: #fff;
+    margin: 0;
+  }
+  
+  

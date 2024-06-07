@@ -1,5 +1,5 @@
 import './globals.css';
-
+import ClientWrapper from './ClientWrapper';
 
 export const metadata = {
   title: 'Fitness app',
@@ -10,7 +10,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <ClientWrapper>
+          <main>{children}</main>
+        </ClientWrapper>
       </body>
     </html>
   );
