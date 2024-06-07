@@ -113,7 +113,7 @@ const WorkoutPlayer: React.FC<WorkoutPlayerProps> = ({ exercises }) => {
   }, [currentExerciseIndex, exercises]);
 
   const startCountdown = () => {
-    let countdownValue = 3;
+    let countdownValue = 10;
     setCountdown(countdownValue);
 
     const countdownInterval = setInterval(() => {
